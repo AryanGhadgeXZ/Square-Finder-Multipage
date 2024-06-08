@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Square App</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <center>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <h1>Square Finder</h1>
+        <form onsubmit="compute()">
+            <input type="number" step="any" placeholder="Enter Number" id="num" class="dep">
+            <br><br>
+            <input type="submit" value="Find Square" class="btn">
+        </form>
+        <script>
+            function compute(){
+                event.preventDefault();
+                let num = document.getElementById("num");
+
+                if (num.value == ""){
+                    alert("U did not Enter a Numeber");
+                    num.focus();
+                    return;
+                }
+                let n = parseFloat(num.value);
+                let r = n * n;
+                localStorage.setItem("res",r);
+                window.location.href ="result.html";
+                
+            }
+        </script>
+    </center>
+    
+</body>
+</html>

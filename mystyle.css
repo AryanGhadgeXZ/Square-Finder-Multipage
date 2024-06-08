@@ -1,0 +1,60 @@
+
+*{ 
+    font-size: 30px; 
+    font-family: 'Poppins';
+}
+body{
+    background-color: #18392B;
+}
+h1{
+    color: #146b43;
+    text-shadow: 2px 2px 2px black;
+}
+a{
+    text-decoration: none;
+    color: #BBCF8D; 
+    margin: 10%;
+}
+a:hover{
+    scale: 105%;
+}
+.nav{
+    background-color: #0F5132;
+    text-decoration: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset
+}
+
+input{
+    border:none ;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset
+}
+
+.dep{
+    background-color: #1d2e28;
+    color: #BBCF8D;
+}
+::placeholder{
+    color: #BBCF8D;
+}
+
+.btn{
+    background-color: #0F5132;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;text-shadow: none;
+}
+
+.btn:hover{
+    background-color: greenyellow;
+    transition: 0.3s;
+    color: #18392B;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, greenyellow 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn:active{
+    transition: 0.3s;
+    transform: translateY(2px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px, rgba(0, 247, 255, 0.3) 0px 7px 13px 0px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;color: rgb(0, 194, 194);
+}
+    
